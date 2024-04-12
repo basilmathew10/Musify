@@ -1,0 +1,77 @@
+name: musify
+description: Music Streaming app made in Flutter!
+homepage: https://github.com/gokadzev/Musify
+repository: https://github.com/gokadzev/Musify
+issue_tracker: https://github.com/gokadzev/Musify/issues
+
+publish_to: 'none'
+version: 2024.4.5+91 # change only versionCode and run update.sh
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ^3.19.5
+
+dependencies:
+  audio_service: ^0.18.13
+  audio_session: ^0.1.18
+  cached_network_image: ^3.3.1
+  dynamic_color: ^1.7.0
+  file_picker: ^8.0.0+1
+  fluentui_system_icons: ^1.1.232
+  flutter:
+    sdk: flutter
+  flutter_flip_card: ^0.0.5
+  flutter_localizations:
+    sdk: flutter
+  go_router: ^13.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  html: ^0.15.4
+  http: ^1.2.0
+  intl: ^0.18.0
+  just_audio: ^0.9.37
+  path_provider: ^2.1.2
+  rxdart: ^0.27.7
+  url_launcher: ^6.2.5
+  youtube_explode_dart: ^2.2.0
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+  flutter_test:
+    sdk: flutter
+  translations_cleaner: ^0.0.5
+
+  # flutter_lints: ^2.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/licenses/
+
+  fonts:
+    - family: paytoneOne
+      fonts:
+        - asset: fonts/paytone/PaytoneOne-Regular.ttf
+
+flutter_native_splash:
+  color: '#ffffff'
+  image: assets/images/splash.png
+  color_dark: '#151515'
+  image_dark: assets/images/splash.png
+
+  android_12:
+    image: assets/images/splash.png
+    icon_background_color: '#ffffff'
+    image_dark: assets/images/splash.png
+    icon_background_color_dark: '#151515'
+
+flutter_launcher_icons:
+  android: 'launcher_icon'
+  adaptive_icon_background: '#191919'
+  adaptive_icon_foreground: 'assets/images/ic_launcher_foreground.png'
+  adaptive_icon_round: 'assets/images/ic_launcher_round.png'
+  image_path: 'assets/images/ic_launcher.png'
